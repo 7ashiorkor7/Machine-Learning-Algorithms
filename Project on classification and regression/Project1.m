@@ -8,12 +8,21 @@ Outlining the purpose of any machine learning algorithm
 %}
 
 %{
-1. Data.txt file contains 212 two dimensional points. Points from location 1 to location 100 belong to class C1, points from location 101 to location 200 belong to class C2. The origin of the remaining 12 points is unknown. They belong to either class C1 or C2. Points from class C1 and C2 are shown in fig.1. Find the unit weight vector w that is perpendicular to line l that passes through points p1=(- 2,6) and p2=(6,-2).
-Figure 1. Points from class C1 are blue and points from class C2 are green.
-2. Find such a threshold t for which wTx<t when x belongs to class C1 and wTx>t when x belongs to class C2. Use your threshold and classify remaining 12 points in file Data.txt to class C1 and C2. (Note wTx=w•x, where T is transpose operator).
+1. Data.txt file contains 212 two dimensional points. Points from location 1 to location 100 belong to class C1, points from location 101 to location 200 belong to class C2. 
+The origin of the remaining 12 points is unknown. They belong to either class C1 or C2. Points from class C1 and C2 are shown in fig.1. 
+Find the unit weight vector w that is perpendicular to line l that passes through points p1=(- 2,6) and p2=(6,-2).
+
+2. Find such a threshold t for which wTx<t when x belongs to class C1 and wTx>t when x belongs to class C2. 
+Use your threshold and classify remaining 12 points in file Data.txt to class C1 and C2. (Note wTx=w•x, where T is transpose operator).
+
 3. Modify your classifier such that the classification can be done comparing the result to zero instead to that of t in previous task.
+
+
 4. Calculate the projections of points from class C1 and C2 on the directions of w and l. Draw histograms for both directions and interpret your results.
-5. Let us consider the points from class C1 alone. (from position 1 to position 100). The probability to an event that a point p1 is within some range from point p2 can be considered as a function of distance d(p1,p2) between the points. What is the probability for the event that a point in class C1 belong to the circular area with center point of (0,0) and the radius that is the mean of all distances of points in C1 from the center point (0,0)?
+5. Let us consider the points from class C1 alone. (from position 1 to position 100). 
+The probability to an event that a point p1 is within some range from point p2 can be considered as a function of distance d(p1,p2) between the points.
+ What is the probability for the event that a point in class C1 belong to the circular area with center point of (0,0) and the radius that is the mean of all distances of points in C1 from the center point (0,0)?
+ 
 6. Fit a linear regression model to the data using points from 1 to 200. Inspect your result visually and consider what kind of problems you may encounter later if you use your model with new data.    
 
 %}
